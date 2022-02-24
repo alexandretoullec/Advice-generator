@@ -1,0 +1,112 @@
+@import url(./design.css);
+
+body{
+    background: hsl(var(--clr-dark-blue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Manrope;
+}
+
+
+
+
+.section-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background: hsl(var(--clr-dark-grayish-blue));
+    width: 42rem;
+    height: 28rem;
+    border-radius: 15px;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.loading-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.num-advice{
+    color: hsl(var(--clr-neon-green));
+    font-size: var(--fs-400);
+    letter-spacing: 0.4rem;
+    margin-bottom: 2rem;
+}
+
+.quote-text{
+    width: 81%;
+    color: hsl(var(--clr-light-cyan));
+    font-size: var(--fs-600);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+.divide-img-cont{
+    background-image: url('./images/pattern-divider-desktop.svg');
+    width: 100%;
+    height: 1rem;
+    margin-top: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3rem 0;
+}
+
+.dice-img-cont{
+    cursor: pointer;
+    position: absolute;
+    background: hsl(var(--clr-neon-green));
+    padding: 1.5rem;
+    border-radius: 50px;
+    bottom: -2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dice-img-cont:hover{
+    box-shadow:
+    /* 0 0 60px 30px #fff,
+    0 0 100px 60px #f0f, */
+    0 0 40px 2px #0ff;
+    opacity: 0.9;
+}
+
+.btn-dice{
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    background-image: url('./images/icon-dice.svg');
+    width: 2.2rem;
+    background-size: contain;
+    aspect-ratio: 1 / 1;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer{
+    color: hsl(var(--clr-light-cyan));
+}
+
+footer a{
+    color: hsl(var(--clr-light-cyan));
+}
+
+@media (max-width:600px) {
+    .section-card{
+        width: 100%;
+    }
+    
+}
